@@ -1,0 +1,263 @@
+{% load static %}
+
+<!-- Head of page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Acceuil</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+
+<!-- Body of page -->
+<body>
+<!-- Header -->
+<header>
+    <!-- Navigation bar -->
+    <nav id="navbar-container">
+        <ul id="navbar-content">
+            <li><a href="#accueil-container1" class="nav-bouton" id="logo-retour">Site</a></li>
+            <li><a href="#projets" class="nav-bouton">Projets</a></li>
+            <li><a href="#aboutme" class="nav-bouton">About Me</a></li>
+            <li><a href="#contact-titre" class="nav-bouton">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="accueil section">
+    <div id="accueil-container1">
+        <div id="photo"></div>
+        <div id="Nom-Prenom"> <div id="nom">CAMARA</div> <div id="prenom">Blomkoum</div> </div>
+    </div>
+    <div id="legend">
+
+    </div>
+    <div id="message">
+        <p>Bonjour</p>
+        <div>
+            <p>Je suis actuellement étudiant à l'institut universitaire de technologie de Vélizy,
+                j'ai construit ce site pour présenter les différents aspects de mon profil.</p>
+            <p>Bonne navigation</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="aboutme-container section">
+    <div id="presentation">
+        <div>
+            <p1 id="aboutme">A propos de moi</p1>
+        </div>
+        <p>Curieux et créatif, je désire m'épanouir dans des environnements nouveaux grâce à mes qualités.
+            je souhaite acquérir plus de compétences et d’expérience dans le domaines du développement informatique.</p>
+        <p>Pour cela, je participe activement à des projets scolaires et personnels
+            mettant mes compétences actuels au services et me permettent de les peaufiner ainsi que de découvrir,
+            apprendre et maitriser de nouveaux.</p>
+        <br>
+        <br>
+        <br>
+        <div class="objetcif sous-section">
+            <p1>Objectifs</p1>
+            <p>Je souhaite acquérir de nouvelles compétences de savoir-faire et de savoir être dans le milieu de l'informatique pour pouvoir, dans le futur, participer à des projets dans lesquelles je pourrais mêler créativité et
+            </p>
+        </div>
+        <div id="centres-interets sous-section">
+            <p1>Centres d'interêt</p1>
+            <div class="slideshow-container">
+                <!-- Slides -->
+                <div class="slides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <p style="position: absolute; color: #9afcd3; font-size: 85px; background: transparent">Programmation</p>
+                    <img src="https://code-projects.org/wp-content/uploads/2018/11/code.jpg" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="slides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <p style="position: absolute; color: white; font-size: 85px; background: transparent">Football</p>
+                    <img src="https://th.bing.com/th/id/OIP.REeJ8K0gDQpYTCKTMZj9sAHaE2?rs=1&pid=ImgDetMain" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="slides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <p style="position: absolute; color: black; font-size: 85px; background: transparent">Dessin</p>
+                    <img src="https://i.pinimg.com/originals/40/58/c6/4058c66f5d60e54a0a74a479063229b6.jpg" style="width:100%;">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <!-- Bouton de navigation-->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- indicateur -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <p1>Formation</p1>
+        <div id="formations">
+            <div class="formation-content">
+                <p>IUT de Vélizy</p>
+                <p>BUT 2 Informatique</p>
+                <address>Vélizy-Villacoublay 78140</address>
+                <p>2023-2025</p>
+            </div>
+            <div class="formation-content">
+                <p>Cité Le Corbusier</p>
+                <p>Baccalauréat STI2D</p>
+                <address>Poissy 78300</address>
+                <p>2023</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="CV sous-section" >
+            <p1>CV</p1>
+            <div style="height: 500px"></div>
+        </div>
+        <div class="skills sous-section">
+            <p1>Compétences</p1>
+            <div class="hard-skills">
+                <div class="hard-skills-content" id="equipe">
+                    <p>Travail en équipe</p>
+                </div>
+                <div class="hard-skills-content" id="autonomie">
+                    <p> Travail en autonomie</p>
+                </div>
+                <div class="hard-skills-content" id="apprentissage">
+                    <p>Capatacité d'adaptation</p>
+                </div>
+                <div class="hard-skills-content" id="rugueur">
+                    <p>rugueur</p>
+                </div>
+            </div>
+            <div class="soft-skills">
+                <div class="soft-skills-content" id="php">
+                    <p>PHP</p>
+                </div>
+                <div class="soft-skills-content" id="html">
+                    <p>HTML5</p>
+                </div>
+                <div class="soft-skills-content" id="css">
+                    <p>CSS3</p>
+                </div>
+                <div class="soft-skills-content" id="js">
+                    <p>JavaScript</p>
+                </div>
+                <div class="soft-skills-content" id="java">
+                    <p>Java</p>
+                </div>
+                <div class="soft-skills-content" id="python">
+                    <p>Python</p>
+                </div>
+                <div class="soft-skills-content" id="c">
+                    <p>C</p>
+                </div>
+            </div>
+        </div>
+        <p1 id="projets">Projets</p1>
+        <div class="projets">
+            <div class="projet" id="projet1">
+                <p style="text-align: center; font-size: 20px; color: #444444">Application Web</p>
+                <ul class="projet-desc">
+                    <li class="projet-desc-l">
+                        <p class="projet-STAR">Situation :</p>
+                        <p> Développer une application, principalement programmé en PHP, implémentant plusieur modules à utilités différentes, <br>principalement de calculs,
+                            hebergé sur un serveur raspberry avec sa base de donnée</p>
+                    </li>
+                    <li class="projet-desc-l">
+                        <p class="projet-STAR">Tâches :</p>
+                        <p>Mise en place de restrictions d'accès au différentes pages.<br>Controle de l'accéssibilité du site.<br>
+                           Developpement de l'aspect graphique du site.<br>Assistance au développent des modules.</p>
+                    </li>
+                    <li class="projet-desc-l">
+                        <p class="projet-STAR">Action :</p>
+                        <p>Developper des fonctions de controle de droits d'accès.<br>
+                           Analyser de l'accessibilié du site en utilisant des outil tel que Wave ou le règlement W3C.<br>
+                            Créer une charte graphique et une maquette puis les intégrer au site grâce au langages de programmation
+                            CSS3, HTML5 et JavaScript.</p>
+                    </li>
+                    <li class="projet-desc-l">
+                        <p class="projet-STAR">Resultats :</p>
+                        <p>Une application Web accessible, intuitive et ergonomique assurant la restriction d'accès au fichiers sensibles.<br>
+                           Compétences en développement Front-End.<br>
+                            Connaissances en terme de sécurité pour un site.<br>
+                            Connaissances dans les languages de programmation PHP, JavaScript, HTML et CSS.<br>
+                            Compétences de travaile en équipe, de gestion de projets, d'implémentation de règlements
+                            et de traitement de données de l'information.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="projet" id="projet2">
+                <p style="text-align: center; font-size: 20px; color: #444444">Apprenti Ordonnateur</p>
+                <ul class="projet-desc">
+                    <li class="projet-desc-l">
+                        <p class="projet-STAR">Situation :</p>
+                        <p> Jeux video simple programmé en Java prenant place sur une plateforme en damier où l'objectif est de resoudre
+                            un puzzle <br>consistant à remettre en place des pierres dans les temples dans lesquelles ils correspondent
+                            selont leur couleurs.</p>
+                    </li>
+                    <li class="projet-desc-l">
+                        <p class="projet-STAR">Tâches :</p>
+                        <p>Developper les différentes composantes du jeu telle que la platoforme interactif, le personnage, les temple,etc.<br>
+                           implémenter différents algorithme permettant la résolution automatique du jeu de manière efficante.</p>
+                    </li>
+                    <li class="projet-desc-l">
+                        <p class="projet-STAR">Action :</p>
+                        <p>Créations de classes représentant les différants composants interagissable du jeu.<br>
+                           Dévelloppement des fonctions permettant la resolution du jeu de manière efficiante.</p>
+                    </li>
+                    <li class="projet-desc-l">
+                        <p class="projet-STAR">Resultats :</p>
+                        <p>Jeu de type reflexion implémentant plusieurs algorithmes de résolutions.<br>
+                           Connaissances dans les langages de prgrammation Java et CSS.<br>
+                           Compétences de travail d'équipe et d'implémentation d'algorithmes complexes.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contact-container">
+    <p id="contact-titre">Contactez moi</p>
+    <ul id="contact-list">
+        <li><div class="contact-content">
+                <a href="tel:+33656867096">Tel num</a>
+                <br>
+                <a href="tel:+33656867096"><img src="../../images/iphone-4862377_640.png"></a>
+                <p>+33656867096</p>
+            </div></li>
+        <li>
+            <div class="contact-content">
+                <a href="mailto:blomkoum.camara@gmail.com">Email</a>
+                <br>
+                <a href="mailto:blomkoum.camara@gmail.com">
+                </a>
+                <p>blomkoum.camara@gmail.com</p>
+            </div>
+        </li>
+        <li>
+            <div class="contact-content">
+                <a href="www.linkedin.com/in/blomkoum-camara-8a204427a">LinkedIn</a>
+                <br>
+                <a href="www.linkedin.com/in/blomkoum-camara-8a204427a"></a>
+            </div></li>
+        <li>... </li>
+    </ul>
+</div>
+</body>
+<footer>
+    <ul id="footer-container">
+        <li id="footer-content1" class="footer-content">Site réaliser par CAMARA Blomkoum</li>
+    </ul>
+</footer>
+</html>
