@@ -1,80 +1,281 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Portfolio - CAMARA Blomkoum</title>
-    <link>
-    <script></script>
+    <link rel="stylesheet" href="{% static 'css/style_tmp.css' %}">
+    <script src="{% static 'js/script.js' %}"></script>
     <style>
         
     </style>
 </head>
 <body>
-
-<header>
-    haut
-</header>
-
-<nav id="navbar-container">
-    <ul id="navbar-content">
-        <li><a href="#accueil-container1" class="nav-bouton" id="logo-retour">Site</a></li>
-        <li><a href="#projets" class="nav-bouton">Projets</a></li>
-        <li><a href="#aboutme" class="nav-bouton">About Me</a></li>
-        <li><a href="#contact-titre" class="nav-bouton">Contact</a></li>
+<nav>
+    <a href="#couverture-titre" id="logo-retour">Site</a>
+    <ul>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#contact-titre">Contact</a></li>
     </ul>
 </nav>
+<p>----</p>
 
-<main>
-    <div><p>presentation</p></div>
-    
-    <div>
-        <p>description</p>
-        <p>titre</p>
-        <p>text</p>
-        <p>objectif</p>
+    <div class="section" id="couverture">
+        <div id="couverture-titre">
+            <img><p>image</p></img>
+            <div> <p class="entree-g" id="nom">CAMARA</p> <p class="entree-d" id="prenom">Blomkoum</p> </div>
+        </div>
+        <div id="message">
+            <p>Bonjour</p>
+            <div>
+                <p>Je suis actuellement étudiant à l'institut universitaire de technologie de Vélizy,
+                    j'ai construit ce site pour présenter les différents aspects de mon profil.</p>
+                <p>Bonne navigation</p>
+            </div>
+        </div>
     </div>
+
+    <p>----</p>
     
-    <div>
-        <p>centres d'interêts</p>
-        <p>titre</p>
-        <p>slide</p>
+    <div class="section">
+        <p  id="aboutme">A propos de moi</p>
+        <p>Curieux et créatif, je désire m'épanouir dans des environnements nouveaux grâce à mes qualités.
+                je souhaite acquérir plus de compétences et d’expérience dans le domaines du développement informatique.</p>
+        <p>Pour cela, je participe activement à des projets scolaires et personnels
+                mettant mes compétences actuels au services et me permettent de les peaufiner ainsi que de découvrir,
+                apprendre et maitriser de nouveaux.</p>
+
+        <div class="objetcif sous-section">
+            <p1>Objectifs</p1>
+            <p>Je souhaite acquérir de nouvelles compétences de savoir-faire et de savoir être dans le milieu de
+                l'informatique pour pouvoir, dans le futur, participer à des projets dans lesquelles je pourrais
+                mêler créativité et rigueur
+            </p>
+        </div>
     </div>
+
+    <p>----</p>
     
-    <div>
-        <p>formation</p>
-        <p>titre</p>
-        <p>formation 1</p>
+    <div class="section">
+        <p>Centres d'interêt</p>
+                <div class="slideshow-container">
+                    <!-- Slides -->
+                    <!--
+                    <div class="slides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <p style="position: absolute; color: #9afcd3; font-size: 85px; background: transparent">Programmation</p>
+                        <img src="https://code-projects.org/wp-content/uploads/2018/11/code.jpg" style="width:100%">
+                        <div class="text">Caption Text</div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <p style="position: absolute; color: white; font-size: 85px; background: transparent">Football</p>
+                        <img src="https://th.bing.com/th/id/OIP.REeJ8K0gDQpYTCKTMZj9sAHaE2?rs=1&pid=ImgDetMain" style="width:100%">
+                        <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <p style="position: absolute; color: black; font-size: 85px; background: transparent">Dessin</p>
+                        <img src="https://i.pinimg.com/originals/40/58/c6/4058c66f5d60e54a0a74a479063229b6.jpg" style="width:100%;">
+                        <div class="text">Caption Three</div>
+                    </div>
+                    -->
+
+                    <!-- Bouton de navigation-->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- indicateur -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
     </div>
+
+    <p>----</p>
     
-    <div>
-        <p>CV</p>
-        <p>titre</p>
-        <p>image cv</p>
-        <p>lien de téléchrgement</p>
+    <div class="section">
+        <p>Formation</p>
+            <div id="formations">
+                <div class="formation-content">
+                    <p>IUT de Vélizy</p>
+                    <p>BUT 2 Informatique</p>
+                    <address>Vélizy-Villacoublay 78140</address>
+                    <p>2023-2025</p>
+                </div>
+                <div class="formation-content">
+                    <p>Cité Le Corbusier</p>
+                    <p>Baccalauréat STI2D</p>
+                    <address>Poissy 78300</address>
+                    <p>2023</p>
+                </div>
+            </div>
     </div>
+
+    <p>----</p>
     
-    <div>
-        <p>compétences</p>
-        <p>titre</p>
-        <p>compétences techniques</p>
-        <p>compétences non-techniques</p>
+    <div id="CV sous-section" class="section">
+        <p1>CV</p1>
+        <div>image</div>
     </div>
+
+    <p>----</p>
     
-    <div>
-        <p>projets</p>
-        <p>titre</p>
-        <p>description STAR + lien vers page</p>
+    <div class="section">
+        <p1>Compétences</p1>
+
+        <!-- compétences techniques -->
+        <div class="hard-skills">
+            <div class="hard-skills-content" id="equipe">
+                <p>Travail en équipe</p>
+            </div>
+            <div class="hard-skills-content" id="autonomie">
+                <p> Travail en autonomie</p>
+            </div>
+            <div class="hard-skills-content" id="apprentissage">
+                <p>Capatacité d'adaptation</p>
+            </div>
+            <div class="hard-skills-content" id="rugueur">
+                <p>rugueur</p>
+            </div>
+        </div>
+
+        <!-- compétences non-techniques -->
+        <div class="soft-skills">
+            <div class="soft-skills-content" id="php">
+                <p>PHP</p>
+            </div>
+            <div class="soft-skills-content" id="html">
+                <p>HTML5</p>
+            </div>
+            <div class="soft-skills-content" id="css">
+                <p>CSS3</p>
+            </div>
+            <div class="soft-skills-content" id="js">
+            <p>JavaScript</p>
+            </div>
+            <div class="soft-skills-content" id="java">
+                <p>Java</p>
+            </div>
+            <div class="soft-skills-content" id="python">
+                <p>Python</p>
+            </div>
+            <div class="soft-skills-content" id="c">
+                <p>C</p>
+            </div>
+        </div>
     </div>
+
+    <p>----</p>
     
-    <div>
-        <p>contact</p>
-        <p>titre</p>
-        <p>liste contacts</p>
+    <div class="section">
+            <div class="projets">
+                <p id="projets">Projets</p>
+                <div class="projet" id="projet1">
+                    <p style="text-align: center; font-size: 20px; color: #444444">Application Web</p>
+                    <ul class="projet-desc">
+                        <li class="projet-desc-l">
+                            <p class="projet-STAR">Situation :</p>
+                            <p> Développer une application, principalement programmé en PHP, implémentant plusieur modules à utilités différentes, <br>principalement de calculs,
+                                hebergé sur un serveur raspberry avec sa base de donnée</p>
+                        </li>
+                        <li class="projet-desc-l">
+                            <p class="projet-STAR">Tâches :</p>
+                            <p>Mise en place de restrictions d'accès au différentes pages.<br>Controle de l'accéssibilité du site.<br>
+                               Developpement de l'aspect graphique du site.<br>Assistance au développent des modules.</p>
+                        </li>
+                        <li class="projet-desc-l">
+                            <p class="projet-STAR">Action :</p>
+                            <p>Developper des fonctions de controle de droits d'accès.<br>
+                               Analyser de l'accessibilié du site en utilisant des outil tel que Wave ou le règlement W3C.<br>
+                                Créer une charte graphique et une maquette puis les intégrer au site grâce au langages de programmation
+                                CSS3, HTML5 et JavaScript.</p>
+                        </li>
+                        <li class="projet-desc-l">
+                            <p class="projet-STAR">Resultats :</p>
+                            <p>Une application Web accessible, intuitive et ergonomique assurant la restriction d'accès au fichiers sensibles.<br>
+                               Compétences en développement Front-End.<br>
+                                Connaissances en terme de sécurité pour un site.<br>
+                                Connaissances dans les languages de programmation PHP, JavaScript, HTML et CSS.<br>
+                                Compétences de travaile en équipe, de gestion de projets, d'implémentation de règlements
+                                et de traitement de données de l'information.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="projet" id="projet2">
+                    <p style="text-align: center; font-size: 20px; color: #444444">Apprenti Ordonnateur</p>
+                    <ul class="projet-desc">
+                        <li class="projet-desc-l">
+                            <p class="projet-STAR">Situation :</p>
+                            <p> Jeux video simple programmé en Java prenant place sur une plateforme en damier où l'objectif est de resoudre
+                                un puzzle <br>consistant à remettre en place des pierres dans les temples dans lesquelles ils correspondent
+                                selont leur couleurs.</p>
+                        </li>
+                        <li class="projet-desc-l">
+                            <p class="projet-STAR">Tâches :</p>
+                            <p>Developper les différentes composantes du jeu telle que la platoforme interactif, le personnage, les temple,etc.<br>
+                               implémenter différents algorithme permettant la résolution automatique du jeu de manière efficante.</p>
+                        </li>
+                        <li class="projet-desc-l">
+                            <p class="projet-STAR">Action :</p>
+                            <p>Créations de classes représentant les différants composants interagissable du jeu.<br>
+                               Dévelloppement des fonctions permettant la resolution du jeu de manière efficiante.</p>
+                        </li>
+                        <li class="projet-desc-l">
+                            <p class="projet-STAR">Resultats :</p>
+                            <p>Jeu de type reflexion implémentant plusieurs algorithmes de résolutions.<br>
+                               Connaissances dans les langages de prgrammation Java et CSS.<br>
+                               Compétences de travail d'équipe et d'implémentation d'algorithmes complexes.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
     </div>
+
+    <p>----</p>
+    
+    <div id="contact-container" class="section">
+        <p id="contact-titre">Contactez moi</p>
+        <ul id="contact-list">
+            <li><div class="contact-content">
+                    <a href="tel:+33656867096">Tel num</a>
+                    <br>
+                    <a href="tel:+33656867096"><img src="../../images/iphone-4862377_640.png"></a>
+                    <p>+33656867096</p>
+                </div></li>
+            <li>
+                <div class="contact-content">
+                    <a href="mailto:blomkoum.camara@gmail.com">Email</a>
+                    <br>
+                    <a href="mailto:blomkoum.camara@gmail.com">
+                    </a>
+                    <p>blomkoum.camara@gmail.com</p>
+                </div>
+            </li>
+            <li>
+                <div class="contact-content">
+                    <a href="www.linkedin.com/in/blomkoum-camara-8a204427a">LinkedIn</a>
+                    <br>
+                    <a href="www.linkedin.com/in/blomkoum-camara-8a204427a"></a>
+                </div></li>
+            <li>... </li>
+        </ul>
+    </div>
+
+    <p>----</p>
     
 </main>
 </body>
 <footer>
-    Site réaliser par CAMARA Blomkoum sans IA :)
+    <ul id="footer-container">
+        <li id="footer-content1" class="footer-content"> Site réaliser par CAMARA Blomkoum sans IA :)</li>
+    </ul>
 </footer>
 </html>
