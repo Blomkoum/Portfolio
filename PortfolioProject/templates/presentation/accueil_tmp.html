@@ -18,6 +18,7 @@
         <li><a href="#projets">Projets</a></li>
         <li><a href="#aboutme">About Me</a></li>
         <li><a href="#contact-titre">Contact</a></li>
+        <li><a href="#">Experiences</a></li>
     </ul>
 </nav>
 <p>----</p>
@@ -25,7 +26,7 @@
     <div class="section" id="couverture">
         <div id="couverture-titre">
             <img><p>image</p></img>
-            <div> <p class="entree-g" id="nom">CAMARA</p> <p class="entree-d" id="prenom">Blomkoum</p> </div>
+            <div> <p class="intro-animation entree-g" id="nom">CAMARA</p> <p class="intro-animation entree-d" id="prenom">Blomkoum</p> </div>
         </div>
         <div id="message">
             <p>Bonjour</p>
@@ -39,13 +40,16 @@
 
     <p>----</p>
     
-    <div class="section">
-        <p  id="aboutme">A propos de moi</p>
+    <div class="section" id="presentation">
+        <div class="objetcif sous-section">
+            <p  id="aboutme">A propos de moi</p>
         <p>Curieux et créatif, je désire m'épanouir dans des environnements nouveaux grâce à mes qualités.
                 je souhaite acquérir plus de compétences et d’expérience dans le domaines du développement informatique.</p>
         <p>Pour cela, je participe activement à des projets scolaires et personnels
                 mettant mes compétences actuels au services et me permettent de les peaufiner ainsi que de découvrir,
                 apprendre et maitriser de nouveaux.</p>
+        </div>
+
 
         <div class="objetcif sous-section">
             <p1>Objectifs</p1>
@@ -58,7 +62,7 @@
 
     <p>----</p>
     
-    <div class="section">
+    <div class="section" id="centres-interets">
         <p>Centres d'interêt</p>
                 <div class="slideshow-container">
                     <!-- Slides -->
@@ -101,9 +105,9 @@
 
     <p>----</p>
     
-    <div class="section">
+    <div class="section" id="formations">
         <p>Formation</p>
-            <div id="formations">
+            <div id="formation">
                 <div class="formation-content">
                     <p>IUT de Vélizy</p>
                     <p>BUT 2 Informatique</p>
@@ -128,11 +132,13 @@
 
     <p>----</p>
     
-    <div class="section">
+    <div class="section" id="competences">
         <p1>Compétences</p1>
 
+        <div class="skills">
         <!-- compétences techniques -->
         <div class="hard-skills">
+            <p>Hard Skills</p>
             <div class="hard-skills-content" id="equipe">
                 <p>Travail en équipe</p>
             </div>
@@ -149,6 +155,7 @@
 
         <!-- compétences non-techniques -->
         <div class="soft-skills">
+            <p>Soft Skills</p>
             <div class="soft-skills-content" id="php">
                 <p>PHP</p>
             </div>
@@ -171,72 +178,71 @@
                 <p>C</p>
             </div>
         </div>
+        </div>
     </div>
 
     <p>----</p>
     
-    <div class="section">
-            <div class="projets">
-                <p id="projets">Projets</p>
-                <div class="projet" id="projet1">
-                    <p style="text-align: center; font-size: 20px; color: #444444">Application Web</p>
-                    <ul class="projet-desc">
-                        <li class="projet-desc-l">
-                            <p class="projet-STAR">Situation :</p>
-                            <p> Développer une application, principalement programmé en PHP, implémentant plusieur modules à utilités différentes, <br>principalement de calculs,
-                                hebergé sur un serveur raspberry avec sa base de donnée</p>
-                        </li>
-                        <li class="projet-desc-l">
-                            <p class="projet-STAR">Tâches :</p>
-                            <p>Mise en place de restrictions d'accès au différentes pages.<br>Controle de l'accéssibilité du site.<br>
-                               Developpement de l'aspect graphique du site.<br>Assistance au développent des modules.</p>
-                        </li>
-                        <li class="projet-desc-l">
-                            <p class="projet-STAR">Action :</p>
-                            <p>Developper des fonctions de controle de droits d'accès.<br>
-                               Analyser de l'accessibilié du site en utilisant des outil tel que Wave ou le règlement W3C.<br>
-                                Créer une charte graphique et une maquette puis les intégrer au site grâce au langages de programmation
-                                CSS3, HTML5 et JavaScript.</p>
-                        </li>
-                        <li class="projet-desc-l">
-                            <p class="projet-STAR">Resultats :</p>
-                            <p>Une application Web accessible, intuitive et ergonomique assurant la restriction d'accès au fichiers sensibles.<br>
-                               Compétences en développement Front-End.<br>
-                                Connaissances en terme de sécurité pour un site.<br>
-                                Connaissances dans les languages de programmation PHP, JavaScript, HTML et CSS.<br>
-                                Compétences de travaile en équipe, de gestion de projets, d'implémentation de règlements
-                                et de traitement de données de l'information.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="projet" id="projet2">
-                    <p style="text-align: center; font-size: 20px; color: #444444">Apprenti Ordonnateur</p>
-                    <ul class="projet-desc">
-                        <li class="projet-desc-l">
-                            <p class="projet-STAR">Situation :</p>
-                            <p> Jeux video simple programmé en Java prenant place sur une plateforme en damier où l'objectif est de resoudre
-                                un puzzle <br>consistant à remettre en place des pierres dans les temples dans lesquelles ils correspondent
-                                selont leur couleurs.</p>
-                        </li>
-                        <li class="projet-desc-l">
-                            <p class="projet-STAR">Tâches :</p>
-                            <p>Developper les différentes composantes du jeu telle que la platoforme interactif, le personnage, les temple,etc.<br>
-                               implémenter différents algorithme permettant la résolution automatique du jeu de manière efficante.</p>
-                        </li>
-                        <li class="projet-desc-l">
-                            <p class="projet-STAR">Action :</p>
-                            <p>Créations de classes représentant les différants composants interagissable du jeu.<br>
-                               Dévelloppement des fonctions permettant la resolution du jeu de manière efficiante.</p>
-                        </li>
-                        <li class="projet-desc-l">
-                            <p class="projet-STAR">Resultats :</p>
-                            <p>Jeu de type reflexion implémentant plusieurs algorithmes de résolutions.<br>
-                               Connaissances dans les langages de prgrammation Java et CSS.<br>
-                               Compétences de travail d'équipe et d'implémentation d'algorithmes complexes.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <div class="section" id="projets">
+        <p id="projets">Projets</p>
+        <div class="projet" id="projet1">
+            <p style="text-align: center; font-size: 20px; color: #444444">Application Web</p>
+            <ul class="projet-desc">
+                <li class="projet-desc-l">
+                    <p class="projet-STAR">Situation :</p>
+                    <p> Développer une application, principalement programmé en PHP, implémentant plusieur modules à utilités différentes, <br>principalement de calculs,
+                        hebergé sur un serveur raspberry avec sa base de donnée</p>
+                </li>
+                <li class="projet-desc-l">
+                    <p class="projet-STAR">Tâches :</p>
+                    <p>Mise en place de restrictions d'accès au différentes pages.<br>Controle de l'accéssibilité du site.<br>
+                        Developpement de l'aspect graphique du site.<br>Assistance au développent des modules.</p>
+                </li>
+                <li class="projet-desc-l">
+                    <p class="projet-STAR">Action :</p>
+                    <p>Developper des fonctions de controle de droits d'accès.<br>
+                        Analyser de l'accessibilié du site en utilisant des outil tel que Wave ou le règlement W3C.<br>
+                        Créer une charte graphique et une maquette puis les intégrer au site grâce au langages de programmation
+                        CSS3, HTML5 et JavaScript.</p>
+                </li>
+                <li class="projet-desc-l">
+                    <p class="projet-STAR">Resultats :</p>
+                    <p>Une application Web accessible, intuitive et ergonomique assurant la restriction d'accès au fichiers sensibles.<br>
+                        Compétences en développement Front-End.<br>
+                        Connaissances en terme de sécurité pour un site.<br>
+                        Connaissances dans les languages de programmation PHP, JavaScript, HTML et CSS.<br>
+                        Compétences de travaile en équipe, de gestion de projets, d'implémentation de règlements
+                        et de traitement de données de l'information.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="projet" id="projet2">
+            <p style="text-align: center; font-size: 20px; color: #444444">Apprenti Ordonnateur</p>
+            <ul class="projet-desc">
+                <li class="projet-desc-l">
+                    <p class="projet-STAR">Situation :</p>
+                    <p> Jeux video simple programmé en Java prenant place sur une plateforme en damier où l'objectif est de resoudre
+                        un puzzle <br>consistant à remettre en place des pierres dans les temples dans lesquelles ils correspondent
+                        selont leur couleurs.</p>
+                </li>
+                <li class="projet-desc-l">
+                    <p class="projet-STAR">Tâches :</p>
+                    <p>Developper les différentes composantes du jeu telle que la platoforme interactif, le personnage, les temple,etc.<br>
+                        implémenter différents algorithme permettant la résolution automatique du jeu de manière efficante.</p>
+                </li>
+                <li class="projet-desc-l">
+                    <p class="projet-STAR">Action :</p>
+                    <p>Créations de classes représentant les différants composants interagissable du jeu.<br>
+                        Dévelloppement des fonctions permettant la resolution du jeu de manière efficiante.</p>
+                </li>
+                <li class="projet-desc-l">
+                    <p class="projet-STAR">Resultats :</p>
+                    <p>Jeu de type reflexion implémentant plusieurs algorithmes de résolutions.<br>
+                        Connaissances dans les langages de prgrammation Java et CSS.<br>
+                        Compétences de travail d'équipe et d'implémentation d'algorithmes complexes.</p>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <p>----</p>
@@ -270,12 +276,12 @@
     </div>
 
     <p>----</p>
-    
-</main>
 </body>
+
 <footer>
     <ul id="footer-container">
         <li id="footer-content1" class="footer-content"> Site réaliser par CAMARA Blomkoum sans IA :)</li>
     </ul>
 </footer>
+
 </html>

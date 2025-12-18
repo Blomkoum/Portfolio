@@ -61,10 +61,12 @@ nav{
 }
 
 nav ul{
-
+    display: flex;
+    justify-content: space-between;
 }
 nav li{
     list-style: none;
+    padding: 20px;
 }
 nav a{
     color: white;
@@ -93,26 +95,108 @@ nav li a{
     justify-content: center;
 }
 
-#nom{
+#nom, #prenom{
     height: fit-content;
+    font-size: 120px;
+    font-weight: bold;
 }
-
-#prenom{
-    height: fit-content;
-}
-
-
-
 
 
 #message{
-    color: white;
+    color: black;
     text-align: center;
-    width: 75%;
     justify-self: center;
     padding-bottom: 15px;
     font-size: 19px;
 }
 
+/* presentation */
+
+#presentation{
+    flex-direction: column;
+    align-items: center;
+}
+
+#presentation p{
+    width: 50%;
+}
+#presentation div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Centres d'interets */
+
+/* Formations */
+#formations{
+    flex-direction: column;
+    align-items: center;
+}
+
+#formation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+
+}
+.formation-content{
+    margin: 15px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 5px;
+    width: 250px;
+}
+
+/* Compétences */
+#competences{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills{
+    justify-self: center;
+    position: relative;
+    width: 100%;
+}
+.hard-skills{
+ }
+
+.hard-skills-content{
+    display: inline-block;
+    background: white;
+    color: #717171;
+    border-radius: 15px;
+    width: 200px;
+    margin: 25px;
+}
+
+.soft-skills{
+
+}
+
+.soft-skills-content {
+    display: inline-block;
+    background: white;
+    color: #717171;
+    border-radius: 15px;
+    width: 200px;
+    margin: 25px;
+}
+
+/* footer */
+footer{
+    background: black;
+    color: white;
+    padding: 20px;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
 
 

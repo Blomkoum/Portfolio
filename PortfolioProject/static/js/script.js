@@ -1,16 +1,22 @@
 window.onload = function () {
 
-    let container = document.querySelector('.entree-g');
+    const elements = document.querySelectorAll(".intro-animation");
 
-    window.addEventListener("scroll", function() {
-        if (isScrolledIntoView(container)) {
-            console.log("true");
-            container.classList.add('entree-g');
+    console.log(elements);
+
+    elements.forEach(el =>{
+        window.addEventListener("scroll", function() {
+
+        if (isScrolledIntoView(el)) {
+            el.style.animation = null;
         }
         else {
-            container.classList.remove('entree-g');
+            el.style.animation = 'none';
+            el.offsetHeight;
         }
     });
+    })
+
 }
 
 function isScrolledIntoView(elem) {
@@ -20,10 +26,11 @@ function isScrolledIntoView(elem) {
 
   var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
 
+
   return isVisible;
 }
 
-
+/**
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -52,5 +59,5 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
-
+**/
 
