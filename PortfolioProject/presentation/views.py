@@ -8,5 +8,5 @@ from django.template import loader
 
 # Create your views here.
 def home(request):
-    template = loader.get_template("presentation/accueil_tmp.html")
-    return HttpResponse(template.render({}, request))
+    page = loader.get_template("presentation/accueil.html")
+    return HttpResponse(page.render({}, request))
