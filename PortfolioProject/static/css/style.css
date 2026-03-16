@@ -248,14 +248,14 @@ Slides
 
 #previous-slide {
     opacity: 50%;
-    transform: translateX(-200px);
+    transform: translateX(-200px) scale(0.75);
     transition: transform 1s ease-out, opacity 1s linear;
 
 }
 
 #next-slide {
     opacity: 50%;
-    transform: translateX(200px);
+    transform: translateX(200px) scale(0.75);
     transition: transform 1s ease-out, opacity 1s linear;
 }
 #pointer{
@@ -263,13 +263,18 @@ Slides
 }
 /* Next & previous buttons */
 .prev, .next {
+    height: 100px;
+    display: flex;
+    align-items: center;
+
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
+    margin: -70px -300px -300px;
     padding: 16px;
-    color: white;
+    color: black;
+    background: grey;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
